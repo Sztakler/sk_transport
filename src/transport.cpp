@@ -52,6 +52,11 @@ void Transport::initialize_socket() {
   bind_socket_to_port();
 }
 
+void Transport::send_data() {
+  
+}
+
+
 void Transport::create_socket() {
   sockfd = socket(AF_INET, SOCK_DGRAM, 0);
   std::cout << "sockfd: " << sockfd << "\n";

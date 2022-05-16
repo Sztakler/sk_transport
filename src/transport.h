@@ -17,6 +17,7 @@ public:
 
 public:
   void initialize_socket();
+  void send_data();
 
 private:
   void create_socket();
