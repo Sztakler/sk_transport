@@ -5,7 +5,7 @@ LINKER_FLAGS = -Wall
 OBJ_DIR = obj
 SRC_DIR = src
 OBJ = $(OBJ_DIR)/main.o \
-	# $(OBJ_DIR)/router.o \
+	$(OBJ_DIR)/transport.o \
 	# $(OBJ_DIR)/vector_entry.o \
 	# $(OBJ_DIR)/utilities.o \
 
@@ -30,3 +30,5 @@ clean:
 
 distclean: clean
 	rm $(NAME)
+
+	
