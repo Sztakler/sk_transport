@@ -10,13 +10,16 @@ public:
   uint port;
   uint size;
 
+  int sockfd;
+
 public:
   Transport(int argc, char* argv[]);
 
 public:
-  void create_socket();
-  void bind_socket_to_port();
+  void initialize_socket();
 
 private:
+  void create_socket();
+  void bind_socket_to_port();
 };
 
