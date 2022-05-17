@@ -6,7 +6,7 @@ OBJ_DIR = obj
 SRC_DIR = src
 OBJ = $(OBJ_DIR)/main.o \
 	$(OBJ_DIR)/transport.o \
-	# $(OBJ_DIR)/vector_entry.o \
+	$(OBJ_DIR)/packet_data.o \
 	# $(OBJ_DIR)/utilities.o \
 
 OBJ_PATH = ./$(OBJ_DIR)/
