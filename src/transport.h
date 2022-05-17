@@ -17,10 +17,13 @@ public:
 
 public:
   void initialize_socket();
-  void send_data();
+  void send_requests();
+  void listen_for_responses();
 
 private:
   void create_socket();
   void bind_socket_to_port();
+  void send_datagram(int start, int end);
+  void read_socket();
 };
 
