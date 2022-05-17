@@ -21,7 +21,7 @@ public:
   int sockfd;
 
   const uint DATAGRAMS_IN_WINDOW = 100;
-  const uint BYTES_IN_DATAGRAM = 700;
+  const uint BYTES_IN_DATAGRAM = 10;
 
   std::vector<PacketData> window; 
 

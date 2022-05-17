@@ -165,7 +165,7 @@ void Transport::store_received_data(char buffer[IP_MAXPACKET + 1],
   if (received_bytes != datagram_size) {
     fprintf(stderr,
             "Number of bytes received does not match required number of bytes "
-            "(%zd/%d).",
+            "(%zd/%d).\n",
             received_bytes, datagram_size);
   }
 
@@ -179,18 +179,26 @@ void Transport::store_received_data(char buffer[IP_MAXPACKET + 1],
 
   int datagram_index = get_datagram_index(datagram_start, datagram_size);
 
-  std::cout << "BYTES\n";
-  printf("[0]  ");
-  for (int j = 1; j + i < IP_MAXPACKET + 1; j++) {
-    printf("%02hhx ", buffer[j + i]);
-    if (j % 10 == 0 && j > 0)
-      printf("\n[%d] ", j);
+  if (window[datagram_index].start_byte == datagram_start &&
+      window[datagram_index].size == datagram_size)
+    window[datagram_index].received = true;
+
+  // std::cout << "BYTES\n";
+  // printf("[0]  ");
+  i++;
+  for (int j = 0; j + i < IP_MAXPACKET + 1; j++) {
+    // printf("%02hhx ", buffer[j + i]);
+    // if (j % 10 == 0 && j > 0)
+      // printf("\n[%d] ", j);
+
+    window[datagram_index].bytes[j] = buffer[j + i];
   }
-  printf("\n");
+  // printf("\n");
 }
 
 int Transport::get_datagram_index(uint datagram_start, uint datagram_size) {
-  std::cout << "<get_datagram_index> " << datagram_start / BYTES_IN_DATAGRAM << "\n";
+  std::cout << "<get_datagram_index> " << datagram_start / BYTES_IN_DATAGRAM
+            << "\n";
   return datagram_start / BYTES_IN_DATAGRAM;
 }
 
