@@ -15,8 +15,11 @@ int main(int argc, char *argv[]) {
   Transport transport(argc, argv);
 
   transport.initialize_socket();
-  transport.send_requests();
-  transport.listen_for_responses();
+  
+  while (true) {
+    transport.send_requests();
+    transport.listen_for_responses();
+  }
 
   return 0;
 }

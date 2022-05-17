@@ -18,7 +18,6 @@ public:
 public:
   void initialize_socket();
   void send_requests();
-  void listen_for_responses();
 
 private:
   void create_socket();

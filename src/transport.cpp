@@ -146,7 +146,7 @@ void Transport::bind_socket_to_port() {
   struct sockaddr_in server_address;
   bzero(&server_address, sizeof(server_address));
   server_address.sin_family = AF_INET;
-  server_address.sin_port = htons(port);
+  server_address.sin_port = htons(32456);
   server_address.sin_addr.s_addr = htonl(INADDR_ANY);
   std::cout << "sockfd: " << sockfd << "\n";
   if (bind(sockfd, (struct sockaddr *)&server_address, sizeof(server_address)) <
