@@ -234,8 +234,8 @@ uint Transport::get_data_start_index(char buffer[IP_MAXPACKET + 1]) {
 }
 
 bool Transport::sender_is_valid(struct sockaddr_in sender) {
-  std::cout << "sender: " << sender.sin_addr.s_addr << " " << sender.sin_port
-            << " " << ((sender.sin_addr.s_addr == ipv4_address.s_addr) && (sender.sin_port == htons(port))) << "\n";
+  // std::cout << "sender: " << sender.sin_addr.s_addr << " " << sender.sin_port
+  //           << " " << ((sender.sin_addr.s_addr == ipv4_address.s_addr) && (sender.sin_port == htons(port))) << "\n";
   return sender.sin_addr.s_addr == ipv4_address.s_addr &&
          sender.sin_port == htons(port);
 }
