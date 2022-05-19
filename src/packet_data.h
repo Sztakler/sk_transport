@@ -13,5 +13,5 @@ public:
   uint size;
   
   public:
-  PacketData(int size);
+  PacketData(int size, int start_byte);
 };
