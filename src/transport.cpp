@@ -23,6 +23,9 @@
 #include <iterator>
 #include <sstream>
 
+#include <fcntl.h>
+#include <unistd.h>
+
 Transport::Transport(int argc, char *argv[]) {
   if (argc < 5) {
     fprintf(stderr, "Invalid number of arguments (4 required, given %d)\n",
@@ -36,7 +39,8 @@ Transport::Transport(int argc, char *argv[]) {
   filemode = "w";
   size = atoi(argv[4]);
 
-  fp = fopen(filename.c_str(), filemode.c_str());
+  // fp = fopen(filename.c_str(), filemode.c_str());
+  file_descriptor = open(filename.c_str(), O_CREAT | O_RDWR | O_TRUNC);
 
   std::cout << argc << " " << ip_address_string << " " << port << " "
             << filename << " " << size << "\n";
@@ -70,15 +74,20 @@ Transport::Transport(int argc, char *argv[]) {
   window = std::deque<PacketData>(DATAGRAMS_IN_WINDOW,
                                   PacketData(BYTES_IN_DATAGRAM, 0));
 
+  for (int i = 0; i < window.size(); i++) {
+    window[i].start_byte = i * BYTES_IN_DATAGRAM;
+  }
+
   saved_bytes = 0;
+  last_index = DATAGRAMS_IN_WINDOW;
   head = tail = 0;
 }
 
 void Transport::print_window() {
   int i = 0;
   for (auto datagram : window) {
-    printf("[%d]<%s>[start: %u] ", i++,
-           datagram.received ? "received" : "waiting ", datagram.start_byte);
+    printf("[%d]<%s>[start: %u size: %u] ", i++,
+           datagram.received ? "received" : "waiting ", datagram.start_byte, datagram.size);
     for (uint8_t byte : datagram.bytes) {
       printf("%x ", byte);
     }
@@ -92,20 +101,24 @@ void Transport::initialize_socket() {
 }
 
 void Transport::send_requests() {
-  for (uint bytes = tail, datagrams = 0;
-       bytes < size && datagrams < DATAGRAMS_IN_WINDOW;
-       bytes += std::min(BYTES_IN_DATAGRAM, size - bytes), datagrams++) {
-
-    PacketData &datagram = window[datagrams];
-    datagram.start_byte = bytes;
-    datagram.size = std::min(BYTES_IN_DATAGRAM, size - bytes);
-    head += bytes;
-
-    send_datagram(datagram.start_byte, datagram.size);
+  for (PacketData datagram : window) {
+    if (datagram.start_byte < size && !datagram.received) {
+      send_datagram(datagram.start_byte, datagram.size);
+    }
   }
 
-  // std::cout << "\033[92mHEAD: " << head << " "
-  //           << "TAIL: " << tail << "\033[0m\n";
+  // for (uint bytes = tail, datagrams = 0;
+  //      bytes < size && datagrams < DATAGRAMS_IN_WINDOW;
+  //      bytes += std::min(BYTES_IN_DATAGRAM, size - bytes), datagrams++) {
+
+  //   PacketData &datagram = window[datagrams];
+  //   std::cout << "DATAGRAM START BYTE: " << bytes << "\n";
+  //   // datagram.start_byte = bytes;
+  //   // datagram.size = std::min(BYTES_IN_DATAGRAM, size - bytes);
+  //   head += bytes;
+
+  //   send_datagram(datagram.start_byte, datagram.size);
+  // }
 }
 
 void Transport::listen_for_responses() {
@@ -148,14 +161,11 @@ void Transport::read_socket() {
     exit(EXIT_FAILURE);
   }
 
-  if (sender_is_valid(sender))
-  {
+  if (sender_is_valid(sender)) {
     std::cout << "sender is valid\n";
     store_received_data(buffer, received_bytes);
   }
 }
-
-
 
 void Transport::store_received_data(char buffer[IP_MAXPACKET + 1],
                                     ssize_t received_bytes) {
@@ -164,15 +174,21 @@ void Transport::store_received_data(char buffer[IP_MAXPACKET + 1],
   std::stringstream sstream(buffer);
   std::string word;
 
+  std::cout << received_message << '\n';
+
   int header_size = 0;
   std::getline(sstream, word, ' ');
+  std::cout <<"Dupa " << word << " ";
   header_size += word.size() + 1;
   std::getline(sstream, word, ' ');
+  std::cout << word << " ";
   header_size += word.size() + 1;
   uint datagram_start = std::stoi(word);
+  std::cout << word << " ";
   std::getline(sstream, word, '\n');
   header_size += word.size() + 1;
   uint datagram_size = std::stoi(word);
+  std::cout << word << " \n";
 
   if (received_bytes - header_size != datagram_size) {
     fprintf(stderr,
@@ -197,21 +213,29 @@ void Transport::store_received_data(char buffer[IP_MAXPACKET + 1],
 
   if (datagram_index < 0) {
     std::cout << "<get_datagram_index>Something is not yes.\n";
-    exit(0);
+    // exit(0);
+    return;
   }
 
   if (window[datagram_index].start_byte == datagram_start &&
-      window[datagram_index].size == datagram_size)
+      window[datagram_index].size == datagram_size) {
+    for (int j = 0; j < datagram_size; j++) {
+      // printf("datagram_index: %d j: %d j+i: %d datagram_size: %d %d\n",
+      //        datagram_index, j, j + i, datagram_size,
+      //        window[datagram_index].start_byte);
+      window[datagram_index].bytes[j] = buffer[j + i];
+      // window[datagram_index].start_byte = datagram_start;
+    }
     window[datagram_index].received = true;
-
-  // i++;
-  for (int j = 0; j < datagram_size; j++) {
-    window[datagram_index].bytes[j] = buffer[j + i];
+    std::cout << "DATAGRAM_SIZE = " << datagram_size << "\n";
+    window[datagram_index].size = datagram_size;
   }
+  // for (int j = 0; j < datagram_size; j++) {
+  //   printf("datagram_size %d datagram_index %d: start_byte = %d\n",
+  //          datagram_size, j, window[j].start_byte);
+  // }
 
   write_window_prefix_to_file();
-
-  // printf("\n");
 }
 
 uint Transport::get_data_start_index(char buffer[IP_MAXPACKET + 1]) {
@@ -223,10 +247,10 @@ uint Transport::get_data_start_index(char buffer[IP_MAXPACKET + 1]) {
   return -1;
 }
 
-bool Transport::sender_is_valid(struct sockaddr_in sender)
-{
-  // std::cout << sender.sin_addr.s_addr << " " << ipv4_address.s_addr << " " << sender.sin_port << " " << port << "\n";
-  return sender.sin_addr.s_addr == ipv4_address.s_addr;
+bool Transport::sender_is_valid(struct sockaddr_in sender) {
+  // std::cout << sender.sin_addr.s_addr << " " << ipv4_address.s_addr << " " <<
+  // sender.sin_port << " " << port << "\n";
+  return sender.sin_addr.s_addr == ipv4_address.s_addr && sender.sin_port == htons(port);
 }
 
 void Transport::write_window_prefix_to_file() {
@@ -259,15 +283,18 @@ void Transport::write_to_file(int count) {
   printf("%s\n", buff);
 
   for (int i = 0; i < count; i++) {
-    retval = fwrite(&window[i].bytes[0], sizeof(uint8_t),
-                    window[i].bytes.size(), fp);
-    fflush(fp);
+    // retval = fwrite(&window[i].bytes[0], sizeof(uint8_t),
+                    // window[i].size, fp);
+
+    retval = write(file_descriptor, &window[i].bytes[0], window[i].size);
+
+    // retval = write();
+    // fflush(fp);
     std::cout << "[" << i << "] Written " << retval << "/"
-              << window[i].bytes.size() << " bytes\n.";
+              << window[i].size << " bytes\n.";
 
     saved_bytes += retval;
   }
-
 }
 
 void Transport::pop_window_prefix(int count) {
@@ -278,20 +305,26 @@ void Transport::pop_window_prefix(int count) {
 
 void Transport::push_window_suffix(int count) {
   for (int i = 0; i < count; i++) {
-    window.push_back(PacketData(BYTES_IN_DATAGRAM, saved_bytes + i * BYTES_IN_DATAGRAM));
+    std::cout << "pushing size:start_byte " << BYTES_IN_DATAGRAM << " "
+              << (last_index + i) * BYTES_IN_DATAGRAM<< "\n";
+    window.push_back(PacketData(BYTES_IN_DATAGRAM, (last_index + i) * BYTES_IN_DATAGRAM)); //
+    last_index++;
   }
 }
 
 int Transport::get_datagram_index(uint datagram_start, uint datagram_size) {
-  std::cout << "<get_datagram_index> " << datagram_start / BYTES_IN_DATAGRAM
-            << "\n";
-  return datagram_start / BYTES_IN_DATAGRAM;
+  std::cout << "<get_datagram_index> "
+            << ((int)datagram_start - (int)saved_bytes) / (int)BYTES_IN_DATAGRAM << "\n";
+  std::cout << "ds: " << datagram_start << " sv: " << saved_bytes << " bid: " << BYTES_IN_DATAGRAM << "\n";
+
+  return ((int)datagram_start - (int)saved_bytes) / (int)BYTES_IN_DATAGRAM;
 }
 
 void Transport::send_datagram(int start, int end) {
   // Maybe can be done in a more elegant way
   char buffer[18];
   sprintf(buffer, "GET %d %d\n", start, end);
+  printf("GET %d %d\n", start, end);
   ssize_t buffer_len = strlen(buffer);
 
   struct sockaddr_in recipient;

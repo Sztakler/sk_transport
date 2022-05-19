@@ -11,20 +11,6 @@
 #include <unistd.h>
 
 int main(int argc, char *argv[]) {
-
-  // int retVal;
-  // FILE *fp;
-  // char buffer[] = "KURWAAAA.";
-
-  // fp = fopen("myfile.txt", "w");
-
-  // retVal = fwrite(buffer, sizeof(char), strlen(buffer), fp);
-  // fclose(fp);
-  // std::cout << "When count = 0, fwrite returned " << retVal << std::endl;
-
-  // retVal = fwrite(buffer,0,1,fp);
-  // std::cout << "When size = 0, fwrite returned " << retVal << std::endl;
-
   Transport transport(argc, argv);
 
   transport.initialize_socket();
@@ -39,7 +25,8 @@ int main(int argc, char *argv[]) {
       break;
     }
   }
-  fclose(transport.fp);
+  // fclose(transport.fp);
+  close(transport.file_descriptor);
 
   return 0;
 }

@@ -15,9 +15,11 @@ public:
   std::string filename;
   std::string filemode;
 
-  uint port;
+  u_int16_t port;
   uint size;
   uint saved_bytes;
+  int last_index;
+  int file_descriptor;
   
   uint head;
   uint tail;

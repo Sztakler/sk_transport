@@ -1,549 +1,294 @@
-5 127.0.0.1 30000 output1 69
+5 127.0.0.1 30000 output1 100
 sockfd: 4
 sockfd: 4
+GET 0 16
+GET 16 16
+GET 32 16
+GET 48 16
+GET 64 16
+GET 80 16
+GET 96 16
 sender is valid
-11
-16 16
-<get_datagram_index> 1
-[0]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[1]<received>[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<waiting >[start: 32] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[3]<waiting >[start: 48] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[4]<waiting >[start: 64] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-10
-64 5
-<get_datagram_index> 4
-[0]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[1]<received>[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<waiting >[start: 32] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[3]<waiting >[start: 48] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[4]<received>[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-11
-16 16
-<get_datagram_index> 1
-[0]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[1]<received>[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<waiting >[start: 32] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[3]<waiting >[start: 48] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[4]<received>[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
+DATA 0 16
+§ÇKŸ…ª{¼Oª3Ô§>
+Dupa DATA 0 0 16 
 10
 0 16
 <get_datagram_index> 0
+ds: 0 sv: 0 bid: 16
+DATAGRAM_SIZE = 16
 
 
 [91mREMOVING PREFIX[0m
-[0]<received>[start: 0] 1 a7 c7 4b 9f 85 aa 7b bc 14 4f aa 33 d4 a7 3e 
-[1]<received>[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<waiting >[start: 32] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[3]<waiting >[start: 48] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[4]<received>[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[0]<received>[start: 0 size: 16] 1 a7 c7 4b 9f 85 aa 7b bc 14 4f aa 33 d4 a7 3e 
+[1]<waiting >[start: 16 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[2]<waiting >[start: 32 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[3]<waiting >[start: 48 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[4]<waiting >[start: 64 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[5]<waiting >[start: 80 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[6]<waiting >[start: 96 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[7]<waiting >[start: 112 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[8]<waiting >[start: 128 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[9]<waiting >[start: 144 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[10]<waiting >[start: 160 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[11]<waiting >[start: 176 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[12]<waiting >[start: 192 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[13]<waiting >[start: 208 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[14]<waiting >[start: 224 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[15]<waiting >[start: 240 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+KURWAAAAAAAAAAA
+
+[0] Written 16/16 bytes
+.pushing size:start_byte 16 256
+GET 16 16
+GET 32 16
+GET 48 16
+GET 64 16
+GET 80 16
+GET 96 16
+sender is valid
+DATA 32 16
+ÞÆA¡wJòh{d…¯ÍûÀ
+Dupa DATA 32 32 16 
+11
+32 16
+<get_datagram_index> 1
+ds: 32 sv: 16 bid: 16
+DATAGRAM_SIZE = 16
+[0]<waiting >[start: 16 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[1]<received>[start: 32 size: 16] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
+[2]<waiting >[start: 48 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[3]<waiting >[start: 64 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[4]<waiting >[start: 80 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[5]<waiting >[start: 96 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[6]<waiting >[start: 112 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[7]<waiting >[start: 128 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[8]<waiting >[start: 144 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[9]<waiting >[start: 160 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[10]<waiting >[start: 176 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[11]<waiting >[start: 192 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[12]<waiting >[start: 208 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[13]<waiting >[start: 224 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[14]<waiting >[start: 240 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[15]<waiting >[start: 256 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+KURWAAAAAAAAAAA
+
+sender is valid
+DATA 80 16
+ 5A¹šKµØSÈÈU
+Dupa DATA 80 80 16 
+11
+80 16
+<get_datagram_index> 4
+ds: 80 sv: 16 bid: 16
+DATAGRAM_SIZE = 16
+[0]<waiting >[start: 16 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[1]<received>[start: 32 size: 16] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
+[2]<waiting >[start: 48 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[3]<waiting >[start: 64 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[4]<received>[start: 80 size: 16] a0 35 18 41 b9 1d 9a 4b b5 d8 53 5 c8 c8 1e 55 
+[5]<waiting >[start: 96 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[6]<waiting >[start: 112 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[7]<waiting >[start: 128 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[8]<waiting >[start: 144 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[9]<waiting >[start: 160 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[10]<waiting >[start: 176 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[11]<waiting >[start: 192 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[12]<waiting >[start: 208 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[13]<waiting >[start: 224 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[14]<waiting >[start: 240 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[15]<waiting >[start: 256 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+KURWAAAAAAAAAAA
+
+sender is valid
+DATA 96 16
+tðHÕÏ,;£u\~
+Dupa DATA 96 96 16 
+11
+96 16
+<get_datagram_index> 5
+ds: 96 sv: 16 bid: 16
+DATAGRAM_SIZE = 16
+[0]<waiting >[start: 16 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[1]<received>[start: 32 size: 16] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
+[2]<waiting >[start: 48 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[3]<waiting >[start: 64 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[4]<received>[start: 80 size: 16] a0 35 18 41 b9 1d 9a 4b b5 d8 53 5 c8 c8 1e 55 
+[5]<received>[start: 96 size: 16] e 74 f0 48 d5 1d 13 cf 2c 6 3b a3 75 5c 7e 1 
+[6]<waiting >[start: 112 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[7]<waiting >[start: 128 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[8]<waiting >[start: 144 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[9]<waiting >[start: 160 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[10]<waiting >[start: 176 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[11]<waiting >[start: 192 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[12]<waiting >[start: 208 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[13]<waiting >[start: 224 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[14]<waiting >[start: 240 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[15]<waiting >[start: 256 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+KURWAAAAAAAAAAA
+
+sender is valid
+DATA 64 16
+#·¢Ò…î¸[-kuj{
+Dupa DATA 64 64 16 
+11
+64 16
+<get_datagram_index> 3
+ds: 64 sv: 16 bid: 16
+DATAGRAM_SIZE = 16
+[0]<waiting >[start: 16 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[1]<received>[start: 32 size: 16] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
+[2]<waiting >[start: 48 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[3]<received>[start: 64 size: 16] f 23 b7 a2 14 d2 85 ee b8 5b 2d 6b 75 6a 7b e 
+[4]<received>[start: 80 size: 16] a0 35 18 41 b9 1d 9a 4b b5 d8 53 5 c8 c8 1e 55 
+[5]<received>[start: 96 size: 16] e 74 f0 48 d5 1d 13 cf 2c 6 3b a3 75 5c 7e 1 
+[6]<waiting >[start: 112 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[7]<waiting >[start: 128 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[8]<waiting >[start: 144 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[9]<waiting >[start: 160 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[10]<waiting >[start: 176 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[11]<waiting >[start: 192 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[12]<waiting >[start: 208 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[13]<waiting >[start: 224 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[14]<waiting >[start: 240 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[15]<waiting >[start: 256 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+KURWAAAAAAAAAAA
+
+GET 16 16
+GET 48 16
+sender is valid
+DATA 16 16
+%ð‹ÇËÈ'
+Dupa DATA 16 16 16 
+11
+16 16
+<get_datagram_index> 0
+ds: 16 sv: 16 bid: 16
+DATAGRAM_SIZE = 16
+
+
+[91mREMOVING PREFIX[0m
+[0]<received>[start: 16 size: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
+[1]<received>[start: 32 size: 16] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
+[2]<waiting >[start: 48 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[3]<received>[start: 64 size: 16] f 23 b7 a2 14 d2 85 ee b8 5b 2d 6b 75 6a 7b e 
+[4]<received>[start: 80 size: 16] a0 35 18 41 b9 1d 9a 4b b5 d8 53 5 c8 c8 1e 55 
+[5]<received>[start: 96 size: 16] e 74 f0 48 d5 1d 13 cf 2c 6 3b a3 75 5c 7e 1 
+[6]<waiting >[start: 112 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[7]<waiting >[start: 128 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[8]<waiting >[start: 144 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[9]<waiting >[start: 160 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[10]<waiting >[start: 176 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[11]<waiting >[start: 192 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[12]<waiting >[start: 208 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[13]<waiting >[start: 224 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[14]<waiting >[start: 240 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[15]<waiting >[start: 256 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 KURWAAAAAAAAAAA
 
 [0] Written 16/16 bytes
 .[1] Written 16/16 bytes
-.sender is valid
-10
-64 5
-<get_datagram_index> 4
-[0]<waiting >[start: 32] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[1]<waiting >[start: 48] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[2]<received>[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[3]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[4]<waiting >[start: 0] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
+.pushing size:start_byte 16 272
+pushing size:start_byte 16 304
 sender is valid
+DATA 64 16
+#·¢Ò…î¸[-kuj{
+Dupa DATA 64 64 16 
 11
-32 16
-<get_datagram_index> 2
-[0]<waiting >[start: 32] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[1]<waiting >[start: 48] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[2]<received>[start: 64] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[4]<waiting >[start: 0] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-11
-48 16
-<get_datagram_index> 3
-[0]<waiting >[start: 32] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[1]<waiting >[start: 48] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[2]<received>[start: 64] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<waiting >[start: 0] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<waiting >[start: 0] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-11
-32 16
-<get_datagram_index> 2
-[0]<waiting >[start: 32] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[1]<waiting >[start: 48] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[2]<received>[start: 64] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<waiting >[start: 0] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<waiting >[start: 0] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-11
-16 16
+64 16
 <get_datagram_index> 1
-[0]<waiting >[start: 32] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[1]<waiting >[start: 48] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<received>[start: 64] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<waiting >[start: 0] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<waiting >[start: 0] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ds: 64 sv: 48 bid: 16
+DATAGRAM_SIZE = 16
+[0]<waiting >[start: 48 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[1]<received>[start: 64 size: 16] f 23 b7 a2 14 d2 85 ee b8 5b 2d 6b 75 6a 7b e 
+[2]<received>[start: 80 size: 16] a0 35 18 41 b9 1d 9a 4b b5 d8 53 5 c8 c8 1e 55 
+[3]<received>[start: 96 size: 16] e 74 f0 48 d5 1d 13 cf 2c 6 3b a3 75 5c 7e 1 
+[4]<waiting >[start: 112 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[5]<waiting >[start: 128 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[6]<waiting >[start: 144 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[7]<waiting >[start: 160 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[8]<waiting >[start: 176 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[9]<waiting >[start: 192 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[10]<waiting >[start: 208 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[11]<waiting >[start: 224 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[12]<waiting >[start: 240 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[13]<waiting >[start: 256 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[14]<waiting >[start: 272 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[15]<waiting >[start: 304 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 KURWAAAAAAAAAAA
 
 sender is valid
-10
-0 16
-<get_datagram_index> 0
-[0]<waiting >[start: 32] 1 a7 c7 4b 9f 85 aa 7b bc 14 4f aa 33 d4 a7 3e 
-[1]<waiting >[start: 48] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<received>[start: 64] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<waiting >[start: 0] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<waiting >[start: 0] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+DATA 80 16
+ 5A¹šKµØSÈÈU
+Dupa DATA 80 80 16 
+11
+80 16
+<get_datagram_index> 2
+ds: 80 sv: 48 bid: 16
+DATAGRAM_SIZE = 16
+[0]<waiting >[start: 48 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[1]<received>[start: 64 size: 16] f 23 b7 a2 14 d2 85 ee b8 5b 2d 6b 75 6a 7b e 
+[2]<received>[start: 80 size: 16] a0 35 18 41 b9 1d 9a 4b b5 d8 53 5 c8 c8 1e 55 
+[3]<received>[start: 96 size: 16] e 74 f0 48 d5 1d 13 cf 2c 6 3b a3 75 5c 7e 1 
+[4]<waiting >[start: 112 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[5]<waiting >[start: 128 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[6]<waiting >[start: 144 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[7]<waiting >[start: 160 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[8]<waiting >[start: 176 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[9]<waiting >[start: 192 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[10]<waiting >[start: 208 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[11]<waiting >[start: 224 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[12]<waiting >[start: 240 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[13]<waiting >[start: 256 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[14]<waiting >[start: 272 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[15]<waiting >[start: 304 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 KURWAAAAAAAAAAA
 
 sender is valid
+DATA 48 16
+ûÇ»!ï9.‘À-žd`
+Dupa DATA 48 48 16 
 11
 48 16
-<get_datagram_index> 3
-[0]<waiting >[start: 0] 1 a7 c7 4b 9f 85 aa 7b bc 14 4f aa 33 d4 a7 3e 
-[1]<waiting >[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<received>[start: 48] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<waiting >[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-10
-0 16
 <get_datagram_index> 0
+ds: 48 sv: 48 bid: 16
+DATAGRAM_SIZE = 16
 
 
 [91mREMOVING PREFIX[0m
-[0]<received>[start: 0] 1 a7 c7 4b 9f 85 aa 7b bc 14 4f aa 33 d4 a7 3e 
-[1]<waiting >[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<received>[start: 48] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<waiting >[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-[0] Written 16/16 bytes
-.sender is valid
-11
-48 16
-<get_datagram_index> 3
-[0]<waiting >[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[1]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[2]<received>[start: 48] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[3]<waiting >[start: 64] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-11
-48 16
-<get_datagram_index> 3
-[0]<waiting >[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[1]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[2]<received>[start: 48] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[3]<waiting >[start: 64] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-11
-32 16
-<get_datagram_index> 2
-[0]<waiting >[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[1]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[2]<received>[start: 48] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<waiting >[start: 64] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-10
-64 5
-<get_datagram_index> 4
-[0]<waiting >[start: 0] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[1]<received>[start: 16] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[2]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<waiting >[start: 48] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<received>[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-11
-16 16
-<get_datagram_index> 1
-[0]<waiting >[start: 0] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[1]<received>[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<waiting >[start: 48] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<received>[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-10
-64 5
-<get_datagram_index> 4
-[0]<waiting >[start: 0] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[1]<received>[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<waiting >[start: 48] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<received>[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-10
-64 5
-<get_datagram_index> 4
-[0]<waiting >[start: 0] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[1]<received>[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<waiting >[start: 48] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<received>[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-11
-48 16
-<get_datagram_index> 3
-[0]<waiting >[start: 0] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[1]<received>[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<received>[start: 48] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<received>[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-11
-16 16
-<get_datagram_index> 1
-[0]<waiting >[start: 0] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[1]<received>[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<received>[start: 48] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<received>[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-10
-64 5
-<get_datagram_index> 4
-[0]<waiting >[start: 0] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[1]<received>[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<received>[start: 48] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<received>[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-10
-64 5
-<get_datagram_index> 4
-[0]<waiting >[start: 0] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[1]<received>[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<received>[start: 48] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<received>[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-KURWAAAAAAAAAAA
-
-sender is valid
-10
-0 16
-<get_datagram_index> 0
-
-
-[91mREMOVING PREFIX[0m
-[0]<received>[start: 0] 1 a7 c7 4b 9f 85 aa 7b bc 14 4f aa 33 d4 a7 3e 
-[1]<received>[start: 16] 25 f0 8b 19 7 c7 cb c8 27 0 dc 67 5e c0 e7 9 
-[2]<received>[start: 32] de c6 41 a1 77 5 4a f2 68 7b 64 85 af cd fb c0 
-[3]<received>[start: 48] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
-[4]<received>[start: 64] f 23 b7 a2 14 0 0 0 0 0 0 0 0 0 0 0 
-[5]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[6]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[7]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[8]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[9]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[10]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[11]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[12]<waiting >[start: 0] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[13]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[14]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[15]<waiting >[start: 22019] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[0]<received>[start: 48 size: 16] 11 fb c7 bb 21 ef 39 2e 91 11 10 c0 2d 9e 64 60 
+[1]<received>[start: 64 size: 16] f 23 b7 a2 14 d2 85 ee b8 5b 2d 6b 75 6a 7b e 
+[2]<received>[start: 80 size: 16] a0 35 18 41 b9 1d 9a 4b b5 d8 53 5 c8 c8 1e 55 
+[3]<received>[start: 96 size: 16] e 74 f0 48 d5 1d 13 cf 2c 6 3b a3 75 5c 7e 1 
+[4]<waiting >[start: 112 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[5]<waiting >[start: 128 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[6]<waiting >[start: 144 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[7]<waiting >[start: 160 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[8]<waiting >[start: 176 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[9]<waiting >[start: 192 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[10]<waiting >[start: 208 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[11]<waiting >[start: 224 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[12]<waiting >[start: 240 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[13]<waiting >[start: 256 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[14]<waiting >[start: 272 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[15]<waiting >[start: 304 size: 16] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 KURWAAAAAAAAAAA
 
 [0] Written 16/16 bytes
 .[1] Written 16/16 bytes
 .[2] Written 16/16 bytes
 .[3] Written 16/16 bytes
-.[4] Written 16/16 bytes
-.SAVED 128/69 BYTES TO FILE
+.pushing size:start_byte 16 304
+pushing size:start_byte 16 336
+pushing size:start_byte 16 368
+pushing size:start_byte 16 400
+sender is valid
+DATA 16 16
+%ð‹ÇËÈ'
+Dupa DATA 16 16 16 
+11
+16 16
+<get_datagram_index> -6
+ds: 16 sv: 112 bid: 16
+<get_datagram_index>Something is not yes.
+SAVED 112/100 BYTES TO FILE
