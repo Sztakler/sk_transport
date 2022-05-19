@@ -26,8 +26,8 @@ public:
 
   int sockfd;
 
-  const uint DATAGRAMS_IN_WINDOW = 16;
-  const uint BYTES_IN_DATAGRAM = 16;
+  const uint DATAGRAMS_IN_WINDOW = 1000;
+  const uint BYTES_IN_DATAGRAM = 1000;
 
   FILE *fp;
 

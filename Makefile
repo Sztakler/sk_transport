@@ -1,6 +1,6 @@
 GPP = g++
 NAME =  sk_transport
-DEBUG_FLAGS =  -std=c17 -fsanitize=address -Wall -Wextra -I.
+DEBUG_FLAGS =  -std=c17 -Wall -Wextra -I. # -fsanitize=address
 LINKER_FLAGS = -Wall
 OBJ_DIR = obj
 SRC_DIR = src
