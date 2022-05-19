@@ -1,9 +1,18 @@
 #pragma once
-
+#include <arpa/inet.h>
+#include <bits/types/struct_timespec.h>
+#include <cstdint>
+#include <cstdio>
+#include <cstring>
+#include <iostream>
 #include <netinet/in.h>
 #include <netinet/ip.h>
-#include <string>
+#include <poll.h>
+#include <sys/socket.h>
 #include <sys/types.h>
+#include <sstream>
+#include <fcntl.h>
+#include <unistd.h>
 #include <vector>
 #include <deque>
 
@@ -40,6 +49,7 @@ public:
   void initialize_socket();
   void send_requests();
   void listen_for_responses();
+  void close_file();
 
   void print_window();
 

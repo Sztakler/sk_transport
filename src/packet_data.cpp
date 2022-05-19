@@ -1,3 +1,8 @@
+/*
+Imię i nazwisko: Krystian Jasionek
+Numer indeksu:   317806
+*/
+
 #include "packet_data.h"
 #include <vector>
 

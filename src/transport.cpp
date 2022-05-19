@@ -1,30 +1,10 @@
+/*
+Imię i nazwisko: Krystian Jasionek
+Numer indeksu:   317806
+*/
+
 #include "transport.h"
 #include "packet_data.h"
-#include <arpa/inet.h>
-#include <bits/types/FILE.h>
-#include <bits/types/struct_timespec.h>
-#include <cstdint>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <ctime>
-#include <iostream>
-#include <netinet/in.h>
-#include <netinet/ip.h>
-#include <poll.h>
-#include <string>
-#include <strings.h>
-#include <sys/poll.h>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <vector>
-
-#include <algorithm>
-#include <iterator>
-#include <sstream>
-
-#include <fcntl.h>
-#include <unistd.h>
 
 Transport::Transport(int argc, char *argv[]) {
   if (argc < 5) {
@@ -338,4 +318,9 @@ void Transport::bind_socket_to_port() {
     perror("<bind>");
     exit(EXIT_FAILURE);
   }
+}
+
+void Transport::close_file()
+{
+    close(file_descriptor);
 }

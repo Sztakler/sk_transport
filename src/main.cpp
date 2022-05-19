@@ -1,14 +1,10 @@
+/*
+Imię i nazwisko: Krystian Jasionek
+Numer indeksu:   317806
+*/
+
 #include "transport.h"
-#include <arpa/inet.h>
-#include <cstdlib>
-#include <errno.h>
 #include <iostream>
-#include <netinet/in.h>
-#include <netinet/ip.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
 
 int main(int argc, char *argv[]) {
   Transport transport(argc, argv);
@@ -25,8 +21,8 @@ int main(int argc, char *argv[]) {
       break;
     }
   }
-  // fclose(transport.fp);
-  close(transport.file_descriptor);
+
+  transport.close_file();
 
   return 0;
 }
